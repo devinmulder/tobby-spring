@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="org.springframework.asm-3.1.2.RELEASE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/org.springframework.asm-3.1.2.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/org.springframework.beans-3.1.2.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/org.springframework.context-3.1.2.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/org.springframework.core-3.1.2.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/org.springframework.expression-3.1.2.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
