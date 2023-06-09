@@ -42,7 +42,7 @@ public class UserDao {
         return user;
     }
 
-    private static Connection getConnection() throws ClassNotFoundException, SQLException {
+    private Connection getConnection() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.jdbc.Driver");
         Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3307/springbook?characterEncoding=UTF-8", "root",
                 "apmsetup");
