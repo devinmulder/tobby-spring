@@ -1,18 +1,13 @@
 package springbook.user.dao;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
 import springbook.user.domain.User;
 
+import java.sql.*;
+
 public class UserDao {
+
     public void add(User user) throws ClassNotFoundException, SQLException {
-        Class.forName("com.mysql.jdbc.Driver");
-        Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3307/springbook?characterEncoding=UTF-8", "root",
-                "apmsetup");
+        Connection c = getConnection();
 
         PreparedStatement ps = c.prepareStatement(
                 "insert into users(id, name, password) values(?,?,?)");
@@ -26,11 +21,9 @@ public class UserDao {
         c.close();
     }
 
-
     public User get(String id) throws ClassNotFoundException, SQLException {
-        Class.forName("com.mysql.jdbc.Driver");
-        Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3307/springbook?characterEncoding=UTF-8", "root",
-                "apmsetup");
+        Connection c = getConnection();
+
         PreparedStatement ps = c
                 .prepareStatement("select * from users where id = ?");
         ps.setString(1, id);
@@ -47,6 +40,13 @@ public class UserDao {
         c.close();
 
         return user;
+    }
+
+    private static Connection getConnection() throws ClassNotFoundException, SQLException {
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3307/springbook?characterEncoding=UTF-8", "root",
+                "apmsetup");
+        return c;
     }
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
