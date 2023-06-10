@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f574ee04-95b6-4f75-85a1-446b2a9bc9d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_springframework_jdbc_3_1_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/org.springframework.jdbc-3.1.2.RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/CountingConnectionMaker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/CountingDaoFactory.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/DaoFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDaoConnectionCountingTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tobby-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tobby-spring.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +40,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/Intelli-J_Projects/ideaIC-2023.1.win_Projects/tobby-spring/libs",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Intelli-J_Projects\ideaIC-2023.1.win_Projects\tobby-spring\libs" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="springbook.user.dao" />
     </key>
@@ -176,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686314062019</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="1.6.5">
+      <created>1686314260156</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686314260156</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,6 +213,7 @@
     <MESSAGE value="1.4.2" />
     <MESSAGE value="1.5.1" />
     <MESSAGE value="1.6.4&#10;&#10;CountingConnectionMaker 는 Proxy 역할." />
-    <option name="LAST_COMMIT_MESSAGE" value="1.6.4&#10;&#10;CountingConnectionMaker 는 Proxy 역할." />
+    <MESSAGE value="1.6.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.6.5" />
   </component>
 </project>
