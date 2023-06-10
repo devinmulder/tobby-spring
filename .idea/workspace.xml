@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f574ee04-95b6-4f75-85a1-446b2a9bc9d7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/domain/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,20 +50,7 @@
       <recent name="springbook.user.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest">
-    <configuration name="UserDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="springbook.user.dao.UserDao" />
-      <module name="tobby-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springbook.user.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserDaoTest.count">
     <configuration name="UserDaoConnectionCountingTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="springbook.user.dao.UserDaoConnectionCountingTest" />
       <module name="tobby-spring" />
@@ -121,13 +108,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserDaoTest.count" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tobby-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.user.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springbook.user.dao" />
+      <option name="MAIN_CLASS_NAME" value="springbook.user.dao.UserDaoTest" />
+      <option name="METHOD_NAME" value="count" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoTest.count" />
         <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="JUnit.UserDaoTest.andAndGet" />
         <item itemvalue="Application.UserDaoTest" />
         <item itemvalue="Application.UserDaoConnectionCountingTest" />
-        <item itemvalue="Application.UserDao" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686378452396</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="2.3.2">
+      <created>1686378768732</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1686378768732</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -267,6 +277,7 @@
     <MESSAGE value="1.8.3" />
     <MESSAGE value="1.8.2&#10;&#10;xml 방식으로 bean 설정." />
     <MESSAGE value="2.2.2&#10;&#10;Junit 4 도입." />
-    <option name="LAST_COMMIT_MESSAGE" value="2.2.2&#10;&#10;Junit 4 도입." />
+    <MESSAGE value="2.3.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.3.2" />
   </component>
 </project>
