@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f574ee04-95b6-4f75-85a1-446b2a9bc9d7" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/libraries/org_springframework_test_3_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_springframework_transaction_3_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/org.springframework.transaction-3.1.2.RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/org.springframework.test-3.1.2.RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tobby-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tobby-spring.iml" afterDir="false" />
     </list>
@@ -266,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686379366298</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="2.3.5">
+      <created>1686380500567</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1686380500567</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -298,6 +302,7 @@
     <MESSAGE value="2.3.2" />
     <MESSAGE value="2.3.3" />
     <MESSAGE value="2.3.3-set" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.3.3-set" />
+    <MESSAGE value="2.3.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.3.5" />
   </component>
 </project>
