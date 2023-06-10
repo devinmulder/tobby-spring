@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f574ee04-95b6-4f75-85a1-446b2a9bc9d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_springsource_org_junit_4_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/com.springsource.org.junit-4.7.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/springbook/user/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/dao/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tobby-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tobby-spring.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686361533585</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="1.8.2&#10;&#10;xml 방식으로 bean 설정.">
+      <created>1686362720676</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686362720676</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,6 +227,7 @@
     <MESSAGE value="1.6.4&#10;&#10;CountingConnectionMaker 는 Proxy 역할." />
     <MESSAGE value="1.6.5" />
     <MESSAGE value="1.8.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.8.3" />
+    <MESSAGE value="1.8.2&#10;&#10;xml 방식으로 bean 설정." />
+    <option name="LAST_COMMIT_MESSAGE" value="1.8.2&#10;&#10;xml 방식으로 bean 설정." />
   </component>
 </project>
