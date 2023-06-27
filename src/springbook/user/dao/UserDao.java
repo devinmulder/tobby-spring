@@ -28,18 +28,7 @@ public class UserDao {
     }
 
     public User get(String id) throws SQLException {
-        return this.jdbcContext.getUserWithStatementStrategy(
-                new StatementStrategy() {
-                    @Override
-                    public PreparedStatement makePreparedStatement(Connection c) throws SQLException {
-
-                        PreparedStatement ps = c.prepareStatement("select * from users where id = ?");
-                        ps.setString(1, id);
-
-                        return ps;
-                    }
-                }
-        );
+        return this.jdbcContext.executeQuery_getUser("select * from users where id = ?", id);
     }
 
     public void deleteAll() throws SQLException {

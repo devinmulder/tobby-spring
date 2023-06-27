@@ -134,5 +134,20 @@ public class JdbcContext {
         return user;
     }
 
+    public User executeQuery_getUser(final String query, String id) throws SQLException {
+        return getUserWithStatementStrategy(
+                new StatementStrategy() {
+
+                    @Override
+                    public PreparedStatement makePreparedStatement(Connection c) throws SQLException {
+                        PreparedStatement ps = c.prepareStatement(query);
+                        ps.setString(1, id);
+
+                        return ps;
+                    }
+                }
+        );
+    }
+
 }
 
