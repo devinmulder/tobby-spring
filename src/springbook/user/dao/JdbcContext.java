@@ -1,5 +1,7 @@
 package springbook.user.dao;
 
+import springbook.user.domain.User;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -41,5 +43,22 @@ public class JdbcContext {
                 }
         );
     }
+
+    public void executeSql_paramBind(final String query, User user) throws SQLException {
+        workWithStatementStrategy(
+                new StatementStrategy() {
+                    public PreparedStatement makePreparedStatement(Connection c)
+                            throws SQLException {
+                        PreparedStatement ps = c.prepareStatement(query);
+                        ps.setString(1, user.getId());
+                        ps.setString(2, user.getName());
+                        ps.setString(3, user.getPassword());
+
+                        return ps;
+                    }
+                }
+        );
+    }
+
 }
 
