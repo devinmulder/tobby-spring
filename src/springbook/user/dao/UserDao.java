@@ -28,28 +28,18 @@ public class UserDao {
     }
 
     public User get(String id) throws SQLException {
-        Connection c = this.dataSource.getConnection();
-        PreparedStatement ps = c
-                .prepareStatement("select * from users where id = ?");
-        ps.setString(1, id);
+        return this.jdbcContext.getUserWithStatementStrategy(
+                new StatementStrategy() {
+                    @Override
+                    public PreparedStatement makePreparedStatement(Connection c) throws SQLException {
 
-        ResultSet rs = ps.executeQuery();
+                        PreparedStatement ps = c.prepareStatement("select * from users where id = ?");
+                        ps.setString(1, id);
 
-        User user = null;
-        if (rs.next()) {
-            user = new User();
-            user.setId(rs.getString("id"));
-            user.setName(rs.getString("name"));
-            user.setPassword(rs.getString("password"));
-        }
-
-        rs.close();
-        ps.close();
-        c.close();
-
-        if (user == null) throw new EmptyResultDataAccessException(1);
-
-        return user;
+                        return ps;
+                    }
+                }
+        );
     }
 
     public void deleteAll() throws SQLException {

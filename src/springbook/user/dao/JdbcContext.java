@@ -1,5 +1,6 @@
 package springbook.user.dao;
 
+import org.springframework.dao.EmptyResultDataAccessException;
 import springbook.user.domain.User;
 
 import java.sql.Connection;
@@ -98,6 +99,39 @@ public class JdbcContext {
                     }
                 }
         );
+    }
+
+
+    public User getUserWithStatementStrategy(StatementStrategy stmt) throws SQLException {
+        Connection c = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        User user = null;
+
+        try {
+            c = dataSource.getConnection();
+
+            ps = stmt.makePreparedStatement(c);
+
+            rs = ps.executeQuery();
+
+            if (rs.next()) {
+                user = new User();
+                user.setId(rs.getString("id"));
+                user.setName(rs.getString("name"));
+                user.setPassword(rs.getString("password"));
+            }
+
+            if (user == null) throw new EmptyResultDataAccessException(1);
+
+        } catch (SQLException e) {
+            throw e;
+        } finally {
+            if (rs != null) { try { rs.close(); } catch (SQLException e) {} }
+            if (ps != null) { try { ps.close(); } catch (SQLException e) {} }
+            if (c != null) { try {c.close(); } catch (SQLException e) {} }
+        }
+        return user;
     }
 
 }
