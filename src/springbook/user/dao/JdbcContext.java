@@ -88,5 +88,17 @@ public class JdbcContext {
         return count;
     }
 
+    public int executeQuery_getCount(final String query) throws SQLException {
+        return getCountWithStatementStrategy(
+                new StatementStrategy() {
+
+                    @Override
+                    public PreparedStatement makePreparedStatement(Connection c) throws SQLException {
+                        return c.prepareStatement(query);
+                    }
+                }
+        );
+    }
+
 }
 
