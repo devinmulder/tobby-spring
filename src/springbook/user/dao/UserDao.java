@@ -57,18 +57,14 @@ public class UserDao {
     }
 
     public int getCount() throws SQLException  {
-        Connection c = dataSource.getConnection();
+        return this.jdbcContext.getCountWithStatementStrategy(
+                new StatementStrategy() {
+                    @Override
+                    public PreparedStatement makePreparedStatement(Connection c) throws SQLException {
 
-        PreparedStatement ps = c.prepareStatement("select count(*) from users");
-
-        ResultSet rs = ps.executeQuery();
-        rs.next();
-        int count = rs.getInt(1);
-
-        rs.close();
-        ps.close();
-        c.close();
-
-        return count;
+                        return c.prepareStatement("select count(*) from users");
+                    }
+                }
+        );
     }
 }
