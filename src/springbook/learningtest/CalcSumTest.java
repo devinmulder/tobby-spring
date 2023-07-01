@@ -25,9 +25,15 @@ public class CalcSumTest {
 	}
 
 	@Test public void multiplyOfNumbers() throws IOException {
-		int mul = calculator.calcMultiply(getClass().getResource("numbers.txt").getPath());
+		int mul = calculator.calcMultiply(this.numFilepath);
 
 		assertThat(mul, is(24));
+	}
+
+	@Test public void concatenateStrings() throws IOException {
+		String concat = calculator.concatenate(this.numFilepath);
+
+		assertThat(concat, is("1234"));
 	}
 
 }
