@@ -28,9 +28,9 @@ public class UserDaoTest {
     @Before
     public void setUp() {
 
-        this.user1 = new User("gyumee", "박성철", "springno1");
+/*        this.user1 = new User("gyumee", "박성철", "springno1");
         this.user2 = new User("leegw700", "이길원", "springno2");
-        this.user3 = new User("bumjin", "박범진", "springno3");
+        this.user3 = new User("bumjin", "박범진", "springno3");*/
 
     }
 
