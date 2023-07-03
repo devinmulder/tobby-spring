@@ -92,7 +92,7 @@ public class UserServiceTest {
 	}
 
 	@Test
-	public void upgradeAllOrNothing() throws Exception {
+	public void upgradeAllOrNothing() {
 		UserService testUserService = new TestUserService(users.get(3).getId());
 		testUserService.setUserDao(this.userDao);
 
