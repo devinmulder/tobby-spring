@@ -10,6 +10,8 @@ import springbook.user.dao2.UserDao;
 import springbook.user.domain.Level;
 import springbook.user.domain.User;
 
+import javax.sql.DataSource;
+import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.List;
 
@@ -28,6 +30,8 @@ public class UserServiceTest {
 	UserService userService;
 	@Autowired
 	UserDao userDao;
+	@Autowired
+	DataSource dataSource;
 
 	@Test
 	public void bean() {
@@ -49,7 +53,7 @@ public class UserServiceTest {
 	}
 
 	@Test
-	public void upgradeLevels() {
+	public void upgradeLevels() throws SQLException {
 		userDao.deleteAll();
 		for(User user : users) userDao.add(user);
 
@@ -92,9 +96,10 @@ public class UserServiceTest {
 	}
 
 	@Test
-	public void upgradeAllOrNothing() {
+	public void upgradeAllOrNothing() throws SQLException {
 		UserService testUserService = new TestUserService(users.get(3).getId());
 		testUserService.setUserDao(this.userDao);
+		testUserService.setDataSource(this.dataSource);
 
 		userDao.deleteAll();
 		for(User user : users) userDao.add(user);
@@ -106,7 +111,7 @@ public class UserServiceTest {
 		catch(TestUserServiceException e) {
 		}
 
-		checkLevelUpgraded(users.get(1), true);
+		checkLevelUpgraded(users.get(1), false);
 	}
 
 
