@@ -23,15 +23,13 @@ public class UserService {
 		this.userDao = userDao;
 	}
 
-	private DataSource dataSource;
+	private PlatformTransactionManager transactionManager;
 
-	public void setDataSource(DataSource dataSource) {
-		this.dataSource = dataSource;
+	public void setTransactionManager(PlatformTransactionManager transactionManager) {
+		this.transactionManager = transactionManager;
 	}
 
 	public void upgradeLevels() throws SQLException /*throws Exception*/ {
-
-		PlatformTransactionManager transactionManager = new DataSourceTransactionManager(dataSource);
 
 		TransactionStatus status = transactionManager.getTransaction((new DefaultTransactionDefinition()));
 
