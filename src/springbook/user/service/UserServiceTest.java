@@ -116,7 +116,7 @@ public class UserServiceTest {
 	}
 
 
-	static class TestUserService extends UserService {
+	class TestUserService extends UserService {
 		private String id;
 
 		private TestUserService(String id) {
