@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f574ee04-95b6-4f75-85a1-446b2a9bc9d7" name="Changes" comment="372-375 page">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_springsource_javax_activation_1_1_0__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/springbook/user/service/TxProxyFactoryBean.java" afterDir="false" />
+    <list default="true" id="f574ee04-95b6-4f75-85a1-446b2a9bc9d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/springbook/learningtest/jdk/proxy/DynamicProxyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/testContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tobby-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tobby-spring.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,18 +62,34 @@
       <recent name="springbook.user.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
-    <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DynamicProxyTest">
+    <configuration name="DynamicProxyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tobby-spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="springbook.user.dao2.*" />
+          <option name="PATTERN" value="springbook.learningtest.jdk.proxy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="springbook.user.dao2" />
-      <option name="MAIN_CLASS_NAME" value="springbook.user.dao2.UserDaoTest" />
+      <option name="PACKAGE_NAME" value="springbook.learningtest.jdk.proxy" />
+      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.jdk.proxy.DynamicProxyTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DynamicProxyTest.simpleProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tobby-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.learningtest.jdk.proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springbook.learningtest.jdk.proxy" />
+      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.jdk.proxy.DynamicProxyTest" />
+      <option name="METHOD_NAME" value="simpleProxy" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -94,22 +105,6 @@
       <option name="PACKAGE_NAME" value="springbook.user.service" />
       <option name="MAIN_CLASS_NAME" value="springbook.user.service.UserServiceTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.mockUpgradeLevels" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tobby-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springbook.user.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="springbook.user.service" />
-      <option name="MAIN_CLASS_NAME" value="springbook.user.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="mockUpgradeLevels" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -147,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DynamicProxyTest" />
+        <item itemvalue="JUnit.DynamicProxyTest.simpleProxy" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserServiceTest.upgradeAllOrNothing" />
         <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.UserDaoTest" />
-        <item itemvalue="JUnit.UserServiceTest.mockUpgradeLevels" />
       </list>
     </recent_temporary>
   </component>
@@ -163,20 +158,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686308713220</updated>
-    </task>
-    <task id="LOCAL-00019" summary="오타 수정.">
-      <created>1687853528317</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1687853528317</updated>
-    </task>
-    <task id="LOCAL-00020" summary="3.3">
-      <created>1687854859520</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1687854859520</updated>
     </task>
     <task id="LOCAL-00021" summary="3.4">
       <created>1687855386518</created>
@@ -507,7 +488,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688628089321</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="누락된 사항 commit.">
+      <created>1688632635179</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1688632635179</updated>
+    </task>
+    <task id="LOCAL-00069" summary="449-458 page : 프록시 팩토리 빈">
+      <created>1688632655638</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1688632655638</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -522,8 +517,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="317-325 page" />
-    <MESSAGE value="5장. 317-325 page" />
     <MESSAGE value="5.1.2 사용자 수정 기능 추가 : 325-329 page" />
     <MESSAGE value="5.1.3 329-334 page" />
     <MESSAGE value="5.1.4 334-336 page" />
@@ -547,7 +540,9 @@
     <MESSAGE value="419-421 page&#10;&#10;UserDao 목 오브젝트 도입" />
     <MESSAGE value="426-428 page" />
     <MESSAGE value="446-448 page : JDK 동적 프록시" />
-    <option name="LAST_COMMIT_MESSAGE" value="446-448 page : JDK 동적 프록시" />
+    <MESSAGE value="누락된 사항 commit." />
+    <MESSAGE value="449-458 page : 프록시 팩토리 빈" />
+    <option name="LAST_COMMIT_MESSAGE" value="449-458 page : 프록시 팩토리 빈" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -586,6 +581,11 @@
           <url>file://$PROJECT_DIR$/src/springbook/user/service/UserServiceImpl.java</url>
           <line>29</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/springbook/learningtest/jdk/proxy/DynamicProxyTest.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
