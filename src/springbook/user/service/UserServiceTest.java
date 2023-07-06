@@ -23,8 +23,8 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.fail;
-import static springbook.user.service.UserService.MIN_LOGCOUNT_FOR_SILVER;
-import static springbook.user.service.UserService.MIN_RECCOMEND_FOR_GOLD;
+import static springbook.user.service.UserServiceImpl.MIN_LOGCOUNT_FOR_SILVER;
+import static springbook.user.service.UserServiceImpl.MIN_RECCOMEND_FOR_GOLD;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -32,6 +32,8 @@ import static springbook.user.service.UserService.MIN_RECCOMEND_FOR_GOLD;
 public class UserServiceTest {
 	@Autowired
 	UserService userService;
+	@Autowired
+	UserServiceImpl userServiceImpl;
 	@Autowired
 	UserDao userDao;
 	@Autowired
@@ -65,7 +67,7 @@ public class UserServiceTest {
 		for(User user : users) userDao.add(user);
 
 		MockMailSender mockMailSender = new MockMailSender();
-		userService.setMailSender(mockMailSender);
+		userServiceImpl.setMailSender(mockMailSender);
 
 		userService.upgradeLevels();
 
@@ -127,16 +129,19 @@ public class UserServiceTest {
 
 	@Test
 	public void upgradeAllOrNothing() {
-		UserService testUserService = new TestUserService(users.get(3).getId());
-		testUserService.setUserDao(this.userDao);
-		testUserService.setTransactionManager(transactionManager);
-		testUserService.setMailSender(this.mailSender);
+		TestUserService testUserService = new TestUserService(users.get(3).getId());
+		testUserService.setUserDao(userDao);
+		testUserService.setMailSender(mailSender);
+
+		UserServiceTx txUserService = new UserServiceTx();
+		txUserService.setTransactionManager(transactionManager);
+		txUserService.setUserService(testUserService);
 
 		userDao.deleteAll();
 		for(User user : users) userDao.add(user);
 
 		try {
-			testUserService.upgradeLevels();
+			txUserService.upgradeLevels();
 			fail("TestUserServiceException expected");
 		}
 		catch(TestUserServiceException e) {
@@ -146,7 +151,7 @@ public class UserServiceTest {
 	}
 
 
-	class TestUserService extends UserService {
+	class TestUserService extends UserServiceImpl {
 		private String id;
 
 		private TestUserService(String id) {
