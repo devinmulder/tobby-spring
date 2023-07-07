@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f574ee04-95b6-4f75-85a1-446b2a9bc9d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/springbook/learningtest/spring/factorybean/FactoryBeanTest-context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/springbook/learningtest/spring/factorybean/FactoryBeanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/springbook/learningtest/spring/factorybean/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/springbook/learningtest/spring/factorybean/MessageFactoryBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +65,7 @@
       <recent name="springbook.user.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest.upgradeAllOrNothing">
+  <component name="RunManager" selected="JUnit.FactoryBeanTest">
     <configuration name="DynamicProxyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tobby-spring" />
       <extension name="coverage">
@@ -77,18 +81,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DynamicProxyTest.classNamePointcutAdvisor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FactoryBeanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tobby-spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="springbook.learningtest.jdk.proxy.*" />
+          <option name="PATTERN" value="springbook.learningtest.spring.factorybean.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="springbook.learningtest.jdk.proxy" />
-      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.jdk.proxy.DynamicProxyTest" />
-      <option name="METHOD_NAME" value="classNamePointcutAdvisor" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="springbook.learningtest.spring.factorybean" />
+      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.spring.factorybean.FactoryBeanTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FactoryBeanTest" />
         <item itemvalue="JUnit.UserServiceTest.upgradeAllOrNothing" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="JUnit.DynamicProxyTest" />
-        <item itemvalue="JUnit.DynamicProxyTest.classNamePointcutAdvisor" />
       </list>
     </recent_temporary>
   </component>
