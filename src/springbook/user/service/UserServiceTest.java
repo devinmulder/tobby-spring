@@ -195,7 +195,7 @@ public class UserServiceTest {
 	}
 
 	@Test @DirtiesContext
-	public void upgradeAllOrNothing() throws Exception {
+	public void upgradeAllOrNothing() {
 		TestUserService testUserService = new TestUserService(users.get(3).getId());
 		testUserService.setUserDao(userDao);
 		testUserService.setMailSender(mailSender);

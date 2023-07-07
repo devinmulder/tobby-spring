@@ -28,7 +28,7 @@ public class TxProxyFactoryBean implements FactoryBean<Object> {
     }
 
     // FactoryBean 인터페이스 구현 메소드
-    public Object getObject() throws Exception {
+    public Object getObject() {
         TransactionHandler txHandler = new TransactionHandler();
         txHandler.setTarget(target);
         txHandler.setTransactionManager(transactionManager);
