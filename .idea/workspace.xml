@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f574ee04-95b6-4f75-85a1-446b2a9bc9d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/springbook/learningtest/spring/factorybean/FactoryBeanTest-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/springbook/learningtest/spring/factorybean/FactoryBeanTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/springbook/learningtest/spring/factorybean/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/springbook/learningtest/spring/factorybean/MessageFactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_springsource_org_aspectj_tools_1_6_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/com.springsource.org.aspectj.tools-1.6.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/springbook/learningtest/spring/pointcut/Bean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/springbook/learningtest/spring/pointcut/PointcutExpressionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/springbook/learningtest/spring/pointcut/Target.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/springbook/learningtest/spring/pointcut/TargetInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tobby-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tobby-spring.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -65,22 +68,7 @@
       <recent name="springbook.user.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FactoryBeanTest">
-    <configuration name="DynamicProxyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tobby-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springbook.learningtest.jdk.proxy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="springbook.learningtest.jdk.proxy" />
-      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.jdk.proxy.DynamicProxyTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PointcutExpressionTest.aa">
     <configuration name="FactoryBeanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tobby-spring" />
       <extension name="coverage">
@@ -96,17 +84,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PointcutExpressionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tobby-spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="springbook.user.dao2.*" />
+          <option name="PATTERN" value="springbook.learningtest.spring.pointcut.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="springbook.user.dao2" />
-      <option name="MAIN_CLASS_NAME" value="springbook.user.dao2.UserDaoTest" />
+      <option name="PACKAGE_NAME" value="springbook.learningtest.spring.pointcut" />
+      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.spring.pointcut.PointcutExpressionTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PointcutExpressionTest.aa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tobby-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.learningtest.spring.pointcut.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springbook.learningtest.spring.pointcut" />
+      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.spring.pointcut.PointcutExpressionTest" />
+      <option name="METHOD_NAME" value="aa" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PointcutExpressionTest.aa" />
+        <item itemvalue="JUnit.PointcutExpressionTest" />
         <item itemvalue="JUnit.FactoryBeanTest" />
         <item itemvalue="JUnit.UserServiceTest.upgradeAllOrNothing" />
         <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="JUnit.UserDaoTest" />
-        <item itemvalue="JUnit.DynamicProxyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -160,13 +164,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686308713220</updated>
-    </task>
-    <task id="LOCAL-00028" summary="248-249 page">
-      <created>1688204573026</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1688204573026</updated>
     </task>
     <task id="LOCAL-00029" summary="250 page">
       <created>1688204950339</created>
@@ -504,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688709552858</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="449-453 page : FactoryBean&#10;&#10;@ContextConfiguration(locations=&quot;/testContext.xml&quot;) &#10;원래는 위처럼 설정파일 이름을 지정해야 한다.&#10;&#10;@ContextConfiguration&#10;위처럼 설정파일 이름을 지정하지 않으면 클래스이름 + &quot;-conext.xml&quot;이 디폴트로 사용된다.">
+      <created>1688711836058</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1688711836058</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -519,7 +523,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="347-348 page : 리스트 5-31, 5-32" />
     <MESSAGE value="349-353 page" />
     <MESSAGE value="예외 정정." />
     <MESSAGE value="362-365 page&#10;&#10;TransactionSynchronizationManager 와 DataSourceUtils 를 사용해 트랜잭션 적용함." />
@@ -544,7 +547,8 @@
     <MESSAGE value="470-474 page&#10;&#10;ProxyFactoryBean 적용" />
     <MESSAGE value="480 page : 포인트컷 테스트" />
     <MESSAGE value="482-486 page&#10;&#10;6.5.2 DefaultAdvisorAutoProxyCreator의 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="482-486 page&#10;&#10;6.5.2 DefaultAdvisorAutoProxyCreator의 적용" />
+    <MESSAGE value="449-453 page : FactoryBean&#10;&#10;@ContextConfiguration(locations=&quot;/testContext.xml&quot;) &#10;원래는 위처럼 설정파일 이름을 지정해야 한다.&#10;&#10;@ContextConfiguration&#10;위처럼 설정파일 이름을 지정하지 않으면 클래스이름 + &quot;-conext.xml&quot;이 디폴트로 사용된다." />
+    <option name="LAST_COMMIT_MESSAGE" value="449-453 page : FactoryBean&#10;&#10;@ContextConfiguration(locations=&quot;/testContext.xml&quot;) &#10;원래는 위처럼 설정파일 이름을 지정해야 한다.&#10;&#10;@ContextConfiguration&#10;위처럼 설정파일 이름을 지정하지 않으면 클래스이름 + &quot;-conext.xml&quot;이 디폴트로 사용된다." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="com.springsource.org.aspectj.tools-1.6.6.RELEASE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/com.springsource.org.aspectj.tools-1.6.6.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
