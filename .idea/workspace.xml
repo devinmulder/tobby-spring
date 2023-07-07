@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f574ee04-95b6-4f75-85a1-446b2a9bc9d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/springbook/user/service/TransactionAdvice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/learningtest/jdk/proxy/DynamicProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/learningtest/jdk/proxy/DynamicProxyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/testContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,7 @@
       <recent name="springbook.user.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DynamicProxyTest">
+  <component name="RunManager" selected="JUnit.UserServiceTest">
     <configuration name="DynamicProxyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tobby-spring" />
       <extension name="coverage">
@@ -94,34 +95,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DynamicProxyTest.proxyFactoryBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tobby-spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="springbook.learningtest.jdk.proxy.*" />
+          <option name="PATTERN" value="springbook.user.dao2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="springbook.learningtest.jdk.proxy" />
-      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.jdk.proxy.DynamicProxyTest" />
-      <option name="METHOD_NAME" value="proxyFactoryBean" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DynamicProxyTest.simpleProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tobby-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springbook.learningtest.jdk.proxy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="springbook.learningtest.jdk.proxy" />
-      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.jdk.proxy.DynamicProxyTest" />
-      <option name="METHOD_NAME" value="simpleProxy" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="springbook.user.dao2" />
+      <option name="MAIN_CLASS_NAME" value="springbook.user.dao2.UserDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,13 +125,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceTest.upgradeAllOrNothing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tobby-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.user.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springbook.user.service" />
+      <option name="MAIN_CLASS_NAME" value="springbook.user.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="upgradeAllOrNothing" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest" />
+        <item itemvalue="JUnit.UserDaoTest" />
+        <item itemvalue="JUnit.UserServiceTest.upgradeAllOrNothing" />
         <item itemvalue="JUnit.DynamicProxyTest" />
         <item itemvalue="JUnit.DynamicProxyTest.pointcutAdvisor" />
-        <item itemvalue="JUnit.DynamicProxyTest.proxyFactoryBean" />
-        <item itemvalue="JUnit.DynamicProxyTest.simpleProxy" />
-        <item itemvalue="JUnit.UserServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -159,20 +159,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686308713220</updated>
-    </task>
-    <task id="LOCAL-00023" summary="직전 commit 은 &#10;UserDao 의 deleteAll() 메서드에 있는 callback 을 JdbcContext 내부로 이동시켰었다.&#10;&#10;이번 commit 에서는&#10;UserDao 의 add() 메서드에 있는 callback 을 JdbcContext 내부로 이동시켰다.&#10;&#10;이것은 책에 안 나오는 내용이다.&#10;직전 commit 을 참고하여 내가 직접 적용해 본 것이다.">
-      <created>1687863676141</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1687863676141</updated>
-    </task>
-    <task id="LOCAL-00024" summary="UserDao 의 getCount() 메서드에 JdbcContext 템플릿 적용 : 1단계">
-      <created>1687864840247</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1687864840247</updated>
     </task>
     <task id="LOCAL-00025" summary="UserDao 의 getCount() 메서드에 JdbcContext 템플릿 적용 : 2단계 완성">
       <created>1687865355400</created>
@@ -503,7 +489,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688652576557</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="469 page">
+      <created>1688696070852</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1688696070853</updated>
+    </task>
+    <task id="LOCAL-00073" summary="불필요한 throws Exception 제거.">
+      <created>1688701179009</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1688701179009</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -518,8 +518,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="5.1.4 334-336 page" />
-    <MESSAGE value="337-340 page" />
     <MESSAGE value="340-344 page" />
     <MESSAGE value="344-345 page" />
     <MESSAGE value="346 page : 리스트 5-30" />
@@ -543,7 +541,9 @@
     <MESSAGE value="449-458 page : 프록시 팩토리 빈" />
     <MESSAGE value="439-446 page : DynamicProxyTest" />
     <MESSAGE value="462-464 page : DynamicProxyTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="462-464 page : DynamicProxyTest" />
+    <MESSAGE value="469 page" />
+    <MESSAGE value="불필요한 throws Exception 제거." />
+    <option name="LAST_COMMIT_MESSAGE" value="불필요한 throws Exception 제거." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
