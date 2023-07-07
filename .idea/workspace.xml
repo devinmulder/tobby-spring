@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f574ee04-95b6-4f75-85a1-446b2a9bc9d7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/springbook/learningtest/jdk/proxy/DynamicProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/learningtest/jdk/proxy/DynamicProxyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,21 +36,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/Intelli-J_Projects/ideaIC-2023.1.win_Projects/tobby-spring/src/springbook/user/service",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Intelli-J_Projects/ideaIC-2023.1.win_Projects/tobby-spring/libs&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Intelli-J_Projects\ideaIC-2023.1.win_Projects\tobby-spring\src\springbook\user\service" />
       <recent name="D:\Intelli-J_Projects\ideaIC-2023.1.win_Projects\tobby-spring\libs" />
+      <recent name="D:\Intelli-J_Projects\ideaIC-2023.1.win_Projects\tobby-spring\src\springbook\user\service" />
       <recent name="D:\Intelli-J_Projects\ideaIC-2023.1.win_Projects\tobby-spring\src" />
       <recent name="D:\Intelli-J_Projects\ideaIC-2023.1.win_Projects\tobby-spring\src\springbook\user\dao2" />
       <recent name="D:\Intelli-J_Projects\ideaIC-2023.1.win_Projects\tobby-spring\src\springbook\learningtest" />
@@ -61,7 +62,7 @@
       <recent name="springbook.user.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DynamicProxyTest.proxyFactoryBean">
+  <component name="RunManager" selected="JUnit.DynamicProxyTest">
     <configuration name="DynamicProxyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tobby-spring" />
       <extension name="coverage">
@@ -73,6 +74,22 @@
       <option name="PACKAGE_NAME" value="springbook.learningtest.jdk.proxy" />
       <option name="MAIN_CLASS_NAME" value="springbook.learningtest.jdk.proxy.DynamicProxyTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DynamicProxyTest.pointcutAdvisor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tobby-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springbook.learningtest.jdk.proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springbook.learningtest.jdk.proxy" />
+      <option name="MAIN_CLASS_NAME" value="springbook.learningtest.jdk.proxy.DynamicProxyTest" />
+      <option name="METHOD_NAME" value="pointcutAdvisor" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -124,29 +141,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.upgradeAllOrNothing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tobby-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springbook.user.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="springbook.user.service" />
-      <option name="MAIN_CLASS_NAME" value="springbook.user.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="upgradeAllOrNothing" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DynamicProxyTest.proxyFactoryBean" />
         <item itemvalue="JUnit.DynamicProxyTest" />
+        <item itemvalue="JUnit.DynamicProxyTest.pointcutAdvisor" />
+        <item itemvalue="JUnit.DynamicProxyTest.proxyFactoryBean" />
         <item itemvalue="JUnit.DynamicProxyTest.simpleProxy" />
         <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="JUnit.UserServiceTest.upgradeAllOrNothing" />
       </list>
     </recent_temporary>
   </component>
@@ -158,13 +159,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686308713220</updated>
-    </task>
-    <task id="LOCAL-00022" summary="3.5.2">
-      <created>1687856331371</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1687856331371</updated>
     </task>
     <task id="LOCAL-00023" summary="직전 commit 은 &#10;UserDao 의 deleteAll() 메서드에 있는 callback 을 JdbcContext 내부로 이동시켰었다.&#10;&#10;이번 commit 에서는&#10;UserDao 의 add() 메서드에 있는 callback 을 JdbcContext 내부로 이동시켰다.&#10;&#10;이것은 책에 안 나오는 내용이다.&#10;직전 commit 을 참고하여 내가 직접 적용해 본 것이다.">
       <created>1687863676141</created>
@@ -502,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688651998293</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="462-464 page : DynamicProxyTest">
+      <created>1688652576557</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1688652576557</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -517,7 +518,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="5.1.3 329-334 page" />
     <MESSAGE value="5.1.4 334-336 page" />
     <MESSAGE value="337-340 page" />
     <MESSAGE value="340-344 page" />
@@ -542,7 +542,8 @@
     <MESSAGE value="누락된 사항 commit." />
     <MESSAGE value="449-458 page : 프록시 팩토리 빈" />
     <MESSAGE value="439-446 page : DynamicProxyTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="439-446 page : DynamicProxyTest" />
+    <MESSAGE value="462-464 page : DynamicProxyTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="462-464 page : DynamicProxyTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
