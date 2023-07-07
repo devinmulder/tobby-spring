@@ -212,7 +212,7 @@ public class UserServiceTest {
 	}
 
 
-	static class TestUserServiceImpl extends UserServiceImpl {
+	static class TestUserService extends UserServiceImpl {
 		private String id = "madnite1"; // users(3).getId()
 
 		protected void upgradeLevel(User user) {

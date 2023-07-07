@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f574ee04-95b6-4f75-85a1-446b2a9bc9d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_springsource_org_aspectj_tools_1_6_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/com.springsource.org.aspectj.tools-1.6.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/springbook/learningtest/spring/pointcut/Bean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/springbook/learningtest/spring/pointcut/PointcutExpressionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/springbook/learningtest/spring/pointcut/Target.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/springbook/learningtest/spring/pointcut/TargetInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tobby-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tobby-spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/testContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +63,7 @@
       <recent name="springbook.user.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PointcutExpressionTest.aa">
+  <component name="RunManager" selected="JUnit.UserServiceTest">
     <configuration name="FactoryBeanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tobby-spring" />
       <extension name="coverage">
@@ -148,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.PointcutExpressionTest.aa" />
         <item itemvalue="JUnit.PointcutExpressionTest" />
         <item itemvalue="JUnit.FactoryBeanTest" />
         <item itemvalue="JUnit.UserServiceTest.upgradeAllOrNothing" />
-        <item itemvalue="JUnit.UserServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -164,13 +159,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686308713220</updated>
-    </task>
-    <task id="LOCAL-00029" summary="250 page">
-      <created>1688204950339</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1688204950339</updated>
     </task>
     <task id="LOCAL-00030" summary="251-253 page">
       <created>1688205843681</created>
@@ -508,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688711836058</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="489-497 page&#10;&#10;6.5.3 포인트컷 표현식을 이용한 포인트컷">
+      <created>1688717374774</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1688717374774</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -523,7 +518,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="349-353 page" />
     <MESSAGE value="예외 정정." />
     <MESSAGE value="362-365 page&#10;&#10;TransactionSynchronizationManager 와 DataSourceUtils 를 사용해 트랜잭션 적용함." />
     <MESSAGE value="369-371 page&#10;&#10;스프링의 트랜잭션 서비스 추상화" />
@@ -548,7 +542,8 @@
     <MESSAGE value="480 page : 포인트컷 테스트" />
     <MESSAGE value="482-486 page&#10;&#10;6.5.2 DefaultAdvisorAutoProxyCreator의 적용" />
     <MESSAGE value="449-453 page : FactoryBean&#10;&#10;@ContextConfiguration(locations=&quot;/testContext.xml&quot;) &#10;원래는 위처럼 설정파일 이름을 지정해야 한다.&#10;&#10;@ContextConfiguration&#10;위처럼 설정파일 이름을 지정하지 않으면 클래스이름 + &quot;-conext.xml&quot;이 디폴트로 사용된다." />
-    <option name="LAST_COMMIT_MESSAGE" value="449-453 page : FactoryBean&#10;&#10;@ContextConfiguration(locations=&quot;/testContext.xml&quot;) &#10;원래는 위처럼 설정파일 이름을 지정해야 한다.&#10;&#10;@ContextConfiguration&#10;위처럼 설정파일 이름을 지정하지 않으면 클래스이름 + &quot;-conext.xml&quot;이 디폴트로 사용된다." />
+    <MESSAGE value="489-497 page&#10;&#10;6.5.3 포인트컷 표현식을 이용한 포인트컷" />
+    <option name="LAST_COMMIT_MESSAGE" value="489-497 page&#10;&#10;6.5.3 포인트컷 표현식을 이용한 포인트컷" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
