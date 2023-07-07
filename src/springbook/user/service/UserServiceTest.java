@@ -195,7 +195,7 @@ public class UserServiceTest {
 		assertThat(userWithoutLevelRead.getLevel(), is(Level.BASIC));
 	}
 
-	@Test @DirtiesContext
+	@Test
 	public void upgradeAllOrNothing() {
 
 		userDao.deleteAll();

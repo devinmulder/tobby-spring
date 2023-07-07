@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f574ee04-95b6-4f75-85a1-446b2a9bc9d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/springbook/user/service/NameMatchClassMethodPointcut.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/testContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,8 +142,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UserServiceTest.upgradeAllOrNothing" />
-        <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="JUnit.UserServiceTest" />
+        <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="JUnit.DynamicProxyTest" />
         <item itemvalue="JUnit.DynamicProxyTest.classNamePointcutAdvisor" />
       </list>
@@ -160,13 +157,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686308713220</updated>
-    </task>
-    <task id="LOCAL-00027" summary="UserDao 의 get() 메서드에 JdbcContext 템플릿 적용 : 2단계 완성.">
-      <created>1687866707713</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1687866707713</updated>
     </task>
     <task id="LOCAL-00028" summary="248-249 page">
       <created>1688204573026</created>
@@ -504,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688705093065</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="482-486 page&#10;&#10;6.5.2 DefaultAdvisorAutoProxyCreator의 적용">
+      <created>1688709552857</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1688709552858</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -519,7 +516,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="346 page : 리스트 5-30" />
     <MESSAGE value="347-348 page : 리스트 5-31, 5-32" />
     <MESSAGE value="349-353 page" />
     <MESSAGE value="예외 정정." />
@@ -544,7 +540,8 @@
     <MESSAGE value="불필요한 throws Exception 제거." />
     <MESSAGE value="470-474 page&#10;&#10;ProxyFactoryBean 적용" />
     <MESSAGE value="480 page : 포인트컷 테스트" />
-    <option name="LAST_COMMIT_MESSAGE" value="480 page : 포인트컷 테스트" />
+    <MESSAGE value="482-486 page&#10;&#10;6.5.2 DefaultAdvisorAutoProxyCreator의 적용" />
+    <option name="LAST_COMMIT_MESSAGE" value="482-486 page&#10;&#10;6.5.2 DefaultAdvisorAutoProxyCreator의 적용" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
